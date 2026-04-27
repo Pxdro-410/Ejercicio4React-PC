@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { fetchSkins } from '../data/api'
 import { useAppContext } from '../context/AppContext'
+import { useLocation } from 'react-router-dom'
 import SkinCard from '../components/SkinCard'
 import SearchBar from '../components/SearchBar'
 import RandomButton from '../components/RandomButton'
@@ -9,6 +10,7 @@ const RARITIES = ['Todas', 'common', 'uncommon', 'rare', 'epic', 'legendary', 'm
 const PAGE_SIZE = 20
 
 function ItemList() {
+  const location = useLocation()
   const [skins, setSkins] = useState([])
   const [filtered, setFiltered] = useState([])
   const [search, setSearch] = useState('')
@@ -17,7 +19,9 @@ function ItemList() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
   const { darkMode, favorites } = useAppContext()
-  const [showFavs, setShowFavs] = useState(false)
+
+  const params = new URLSearchParams(location.search)
+  const [showFavs, setShowFavs] = useState(params.get('filter') === 'favorites')
 
   useEffect(() => {
     async function loadSkins() {
@@ -34,6 +38,11 @@ function ItemList() {
     }
     loadSkins()
   }, [])
+
+  useEffect(() => {
+    const p = new URLSearchParams(location.search)
+    setShowFavs(p.get('filter') === 'favorites')
+  }, [location.search])
 
   useEffect(() => {
     let result = showFavs ? favorites : skins
