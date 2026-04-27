@@ -6,7 +6,7 @@ import SkinCard from '../components/SkinCard'
 import SearchBar from '../components/SearchBar'
 import RandomButton from '../components/RandomButton'
 
-const RARITIES = ['Todas', 'common', 'uncommon', 'rare', 'epic', 'legendary', 'mythic']
+const RARITIES = ['Todas', 'common', 'uncommon', 'rare', 'epic', 'legendary', 'mythic', 'icon']
 const PAGE_SIZE = 20
 
 function ItemList() {
