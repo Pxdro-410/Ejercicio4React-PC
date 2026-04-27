@@ -41,7 +41,7 @@ function ItemDetail() {
     <main className={`item-detail ${darkMode ? 'dark' : 'light'}`}>
       <div className="item-detail__nav">
         <button className="btn btn--back" onClick={() => navigate(-1)}>
-          ← Volver
+          Volver
         </button>
         <Link to="/items" className="btn btn--secondary">
           Ver todas las skins
