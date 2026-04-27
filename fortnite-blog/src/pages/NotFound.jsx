@@ -8,7 +8,7 @@ function NotFound() {
     <main className={`not-found ${darkMode ? 'dark' : 'light'}`}>
       <div className="not-found__content">
         <h1 className="not-found__code">404</h1>
-        <h2 className="not-found__title">¡Ruta no encontrada!</h2>
+        <h2 className="not-found__title">Ruta no encontrada</h2>
         <p className="not-found__msg">
           Este apartado no existe, intenta nuevamente.
         </p>
