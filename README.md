@@ -106,7 +106,7 @@ import SkinCard from './components/SkinCard'
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/Pxdro-410/Ejercicio4React-PC.git
+git clone https://github.com/Pxdro-410/Ejercicio4React-PC
 
 # 2. Entrar a la carpeta del proyecto
 cd Ejercicio4React-PC/fortnite-blog
