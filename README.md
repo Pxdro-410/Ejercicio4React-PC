@@ -39,26 +39,8 @@ Mini-blog de skins y cosméticos de Fortnite construido con **Vite + React + Rea
 
 
 ## Estructura del proyecto
-fortnite-blog/
-├── src/
-│   ├── components/
-│   │   ├── Navbar.jsx          # Barra de navegación global
-│   │   ├── SkinCard.jsx        # Tarjeta reutilizable de skin 
-│   │   ├── SearchBar.jsx       # Barra de búsqueda con limpieza
-│   │   └── RandomButton.jsx    # Botón de skin aleatoria
-│   ├── context/
-│   │   └── AppContext.jsx      # Estado global (tema + favoritos)
-│   ├── data/
-│   │   └── api.js              # Todas las llamadas a la API
-│   ├── pages/
-│   │   ├── Home.jsx            # Ruta /
-│   │   ├── ItemList.jsx        # Ruta /items
-│   │   ├── ItemDetail.jsx      # Ruta /items/:id
-│   │   └── NotFound.jsx        # Ruta * (404)
-│   ├── App.jsx
-│   └── main.jsx
-├── demo/                       # Video de demostración
-└── README.md
+<img width="695" height="478" alt="image" src="https://github.com/user-attachments/assets/4aeaf323-70d2-4267-ac81-456e4dadfde0" />
+
 
 
 ## Componente reutilizable: `SkinCard`
